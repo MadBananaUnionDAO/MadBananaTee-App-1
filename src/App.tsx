@@ -37,7 +37,7 @@ function App() {
           <div className="md:mt-20 lg:mt-28 mt-5 smallest:mt-16">
             <h1 className={`${REDTEXT} text-center transition duration-500 lg:text-3xl md:text-2xl `}>Input your company name:</h1>
             <div className="flex flex-col justify-center items-center p-6">
-              <textarea onClick={() => setIsRequiredRed(false)} onChange={handleChange} value={textAreaValue} className=" resize-none bg-[#2c2b2b] border-2 rounded-2xl text-bone px-2 border-opacity-70 border-bone outline-none" placeholder="Company name..." name="companyname" id="companyname" cols={20} rows={1}>{textAreaValue}</textarea>
+              <textarea onChange={handleChange} value={textAreaValue} className=" resize-none bg-[#2c2b2b] border-2 rounded-2xl text-bone px-2 border-opacity-70 border-bone outline-none" placeholder="Company name..." name="companyname" id="companyname" cols={20} rows={1}>{textAreaValue}</textarea>
               <button onClick={handleMenu} className="text-[#2c2b2b] hover:bg-[#2c2b2b] hover:text-bone mt-3 rounded-2xl bg-bone px-6 py-2">Start!</button>
             </div>
           </div>
