@@ -49,7 +49,7 @@ const handleSeniorEngineerClick = () => {
     }
 }
 useEffect(() => {
-    let timeout: string | number | NodeJS.Timeout | undefined 
+    let timeout: NodeJS.Timeout 
 
     const updateBalance = () => {
         setBalance(balance => balance + balancePerSec);
@@ -71,7 +71,7 @@ useEffect(() => {
         </div>
     <div className=" flex md:flex-row flex-col justify-center mt-10 md:mt-28 items-center md:w-5/6 mx-auto w-full">
         {/* CLICK BUTTON */}
-        <div>
+        <div className=" hover:opacity-90 transition duration-300">
             <button onClick={handleBalanceClick} className="md:h-[400px] md:w-[400px] rounded-full bg-green p-4 flex flex-col justify-center items-center  h-[250px] w-[250px]">
                 <span className="text-yellow text-2xl lg:text-4xl">Click!</span>
                 <span className="lg:text-xl text-bone">Balance: {balance}$</span>
@@ -90,7 +90,7 @@ useEffect(() => {
                 <div className="flex justify-center items-center bg-green lg:w-16 lg:h-16 h-10 w-10 rounded-full">
                     {workerCount}
                 </div>
-                <button onClick={handleWorkerClick} className="p-4 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
+                <button onClick={handleWorkerClick} className="p-4 hover:opacity-90 transition duration-300 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
                     <p>+</p>
                 </button>
             </div>
@@ -103,7 +103,7 @@ useEffect(() => {
                 <div className="flex justify-center items-center bg-green lg:w-16 lg:h-16 h-10 w-10 rounded-full">
                     {jrEngineerCount}
                 </div>
-                <button onClick={handleJRClick} className="p-4 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
+                <button onClick={handleJRClick} className="p-4 hover:opacity-90 transition duration-300 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
                     <p>+</p>
                 </button>
             </div>
@@ -116,7 +116,7 @@ useEffect(() => {
                 <div className="flex justify-center items-center bg-green lg:w-16 lg:h-16 h-10 w-10 rounded-full">
                     {engineerCount}
                 </div>
-                <button onClick={handleEngineerClick} className="p-4 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
+                <button onClick={handleEngineerClick} className="p-4 hover:opacity-90 transition duration-300 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
                     <p>+</p>
                 </button>
             </div>
@@ -129,7 +129,7 @@ useEffect(() => {
                 <div className="flex justify-center items-center bg-green lg:w-16 lg:h-16 h-10 w-10 rounded-full">
                     {seniorEngineerCount}
                 </div>
-                <button onClick={handleSeniorEngineerClick} className="p-4 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
+                <button onClick={handleSeniorEngineerClick} className="p-4 hover:opacity-90 transition duration-300 bg-yellow rounded-full w-10 h-10 lg:h-16 lg:w-16 flex justify-center items-center ">
                     <p>+</p>
                 </button>
             </div>
